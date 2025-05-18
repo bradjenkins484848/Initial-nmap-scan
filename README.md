@@ -28,4 +28,4 @@ nmap -Pn -sS -sV --script=vuln -p1-65535 192.168.56.101 -oN windows_full_nmap.nm
 
 ## 5. Appendix  
 - Full output: `windows_full_nmap.nmap`  
-- Raw data: `windows_full_nmap.xml`, `windows_full_nmap.html`
+- Raw data: `windows_full_nmap.xml`, `windows_full_nmap.gnnmap`
