@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.95 scan initiated Sun May 18 12:15:39 2025 as: /usr/lib/nmap/nmap -&#45;privileged -Pn -sS -sV -&#45;script=vuln -p1-65535 -oA /home/kali/windows_full_nmap 192.168.56.101 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -&#45;privileged -Pn -sS -sV -&#45;script=vuln -p1-65535 -oA /home/kali/windows_full_nmap 192.168.56.101" start="1747584939" startstr="Sun May 18 12:15:39 2025" version="7.95" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.56.101" addrtype="ipv4"/>
+<address addr="08:00:27:9F:1B:2A" addrtype="mac" vendor="PCS Systemtechnik/Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1747584949" endtime="1747585193"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.56.101" addrtype="ipv4"/>
+<address addr="08:00:27:9F:1B:2A" addrtype="mac" vendor="PCS Systemtechnik/Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-response" count="65533" proto="tcp" ports="1-3388,3390-5984,5986-65535"/>
+</extraports>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="ms-wbt-server" servicefp="SF-Port3389-TCP:V=7.95%I=7%D=5/18%Time=682A0828%P=x86_64-pc-linux-gnu%r(TerminalServerCookie,13,&quot;\x03\0\0\x13\x0e\xd0\0\0\x124\0\x02/\x08\0\x02\0\0\0&quot;);" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-csrf" output="Couldn&apos;t find any CSRF vulnerabilities."/><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/></port>
+</ports>
+<times srtt="968" rttvar="699" to="100000"/>
+</host>
+<runstats><finished time="1747585193" timestr="Sun May 18 12:19:53 2025" summary="Nmap done at Sun May 18 12:19:53 2025; 1 IP address (1 host up) scanned in 254.45 seconds" elapsed="254.45" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

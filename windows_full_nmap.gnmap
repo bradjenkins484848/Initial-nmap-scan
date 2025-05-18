@@ -1,0 +1,4 @@
+# Nmap 7.95 scan initiated Sun May 18 12:15:39 2025 as: /usr/lib/nmap/nmap --privileged -Pn -sS -sV --script=vuln -p1-65535 -oA /home/kali/windows_full_nmap 192.168.56.101
+Host: 192.168.56.101 ()	Status: Up
+Host: 192.168.56.101 ()	Ports: 3389/open/tcp//ms-wbt-server///, 5985/open/tcp//http//Microsoft HTTPAPI httpd 2.0 (SSDP|UPnP)/	Ignored State: filtered (65533)
+# Nmap done at Sun May 18 12:19:53 2025 -- 1 IP address (1 host up) scanned in 254.45 seconds
